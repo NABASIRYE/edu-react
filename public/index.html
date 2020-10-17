@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+          <div class="logo">
+            <button onclick="openMenu()">
+              &#9776;
+            </button>
+            <h1>EDU STACK OVERFLOW</h1>
+          </div>
+          <div class="signlinks"> 
+            <a href="">Signin </a> 
+            <a href=""> Sign Up</a> 
+          </div>  
+        </header>
+        <!-- side bar -->
+        <aside class="sidebar">
+          <h2>EDU-QUESTIONS</h2>
+          <button class="sidebarclosebutton" onclick="closeMenu()">X</button>
+        </aside>
+        <main class="main">
+          <!-- <ul>
+              <li>signup</li>
+              <li>login</li>
+          </ul> -->
+        </main>
+        <footer class="footer">
+          <p>Footer</p>
+        </footer>
+      </div>  
+</body>
+<script>
+  function openMenu(){
+    document.querySelector(".sidebar").classList.add("open");
+  }
+  function closeMenu(){
+    document.querySelector(".sidebar").classList.remove("open");
+  }
+</script>
+</html>
